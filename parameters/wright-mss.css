@@ -28,27 +28,34 @@ TEI:before(9),
 locus:before(9),
 rubric:before(9),
 incipit:before(9),
+explicit:before(9),
 author:before(9),
 note:before(9),
 title:before(9),
+quote:before(9),
 handNote > desc:before(9),
 origDate:before(9),
 origPlace:before(9),
-change:before(9) {
+change:before(9),
+condition:before(9) {
     content: oxy_local-name() ' ';
 }
 /* exceptions to the general label rule above */
 TEI:before(9) {
     content: 'Wright manuscript metadata '
+
 }
 additions:before(9) {
     content: 'notes on additions: '
+
 }
 msIdentifier > idno:before(9) {
-    content: 'manuscript ID: '
+    content: 'Wright manuscript ID: '
+
 }
 altIdentifier > idno:before(9) {
-    content: 'alternate ID: '
+    content: 'BL Add. ID: '
+
 }
 msContents:before(9) {
     content: 'MANUSCRIPT CONTENTS \A';
@@ -62,6 +69,16 @@ physDesc:before(9) {
 history:before(9) {
     content: 'MANUSCRIPT HISTORY \A';
 }
+handDesc:before(9) {
+    content: 'Hand description';
+}
+handNote:before(9) {
+    content: 'Hand note \A';
+}
+additions > list > item:before(9) {
+    content: 'Item'
+
+}
 
 
 /* BACKGROUND */
@@ -73,10 +90,18 @@ sourceDesc {
 msContents,
 msItem,
 physDesc,
-history {
-    border: 2px black solid;
+history,
+handDesc,
+handNote,
+additions > list > item {
+    border-top: #ccc 2px solid;
+    border-right: #ccc 2px solid;
+    border-bottom: #777 2px solid;
+    border-left: #777 2px solid;
+    border-radius: 25px;
     background-color: white;
-
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* COLORS */
@@ -92,13 +117,17 @@ oxy|comment {
 *:before(8),
 *:before(7),
 *:before(6) {
-    color: darkgreen
+    color: darkgreen;
+    background-color: lightyellow;
 }
 
 /* DISPLAY */
 
 * {
     display: block;
+}
+quote {
+    display: inline;
 }
 titleStmt,
 summary,
@@ -114,6 +143,9 @@ encodingDesc,
 foliation,
 collation,
 accMat,
+provenance,
+acquisition,
+additional,
 body,
 text {
     display: none;
@@ -157,19 +189,54 @@ msContents:not(msContents:has(msItem)):after(1)
     oxy_button(
 actionID, "append.child.msItem");
 }
-msItem:last-of-type:after(0) {
-    content: 
+/*msItem:last-of-type:after(0) {content: 
     oxy_button(
 actionID, "append.sibling.msItem");
+}*/
+msItem:after(0) {
+    content: oxy_button(
+actionID, "append.child.self.shallow") oxy_button(
+actionID, "append.sibling.self.shallow") oxy_button(
+actionID, "delete.self");
+}
+msItem > locus:after(1),
+msItem > author:after(1),
+msItem > title:after(1),
+msItem > rubric:after(1),
+msItem > incipit:after(1),
+quote:after(1),
+msItem > explicit:after(1),
+msItem > finalRubric:after(1),
+msItem > note:after(1),
+handNote:after(1),
+change:after(1),
+additions > list > item:after(1),
+p:after(1),
+origDate:after(1),
+origPlace:after(1)
+{
+    content: " " oxy_button(
+actionID, "append.sibling.self.shallow") oxy_button(
+actionID, "delete.self");
+}
+msItem > author:before(0),
+msItem > title:before(0),
+msItem > rubric:before(0),
+msItem > incipit:before(0),
+msItem > quote:before(0),
+msItem > explicit:before(0),
+msItem > finalRubric:before(0),
+msItem > note:before(0)
+{
+    content: "  ";
 }
 
 msItem:before(7) {
-    background-color: lightyellow;
     content: 
     'defective? ' oxy_checkbox(
 edit, "@defective", 
 values, "true", 
-uncheckedValues, "false");
+uncheckedValues, "false") '\A';
 }
 msItem:not(msItem:has(locus)):after(1),
 msItem > quote:not(quote:has(locus)):after(1),
@@ -234,55 +301,84 @@ msItem:not(msItem:has(msItem)):after(10)
     oxy_button(
 actionID, "append.child.msItem");
 }
-msItem locus:last-of-type:after(1) {
-    content: 
+/*msItem locus:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.locus");
 }
-msItem author:last-of-type:after(1) {
-    content: 
+msItem author:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.author");
 }
-msItem title:last-of-type:after(1) {
-    content: 
+msItem title:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.title");
 }
-msItem rubric:last-of-type:after(1) {
-    content: 
+msItem rubric:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.rubric");
 }
-msItem incipit:last-of-type:after(1) {
-    content: 
+msItem incipit:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.incipit");
 }
-msItem quote:last-of-type:after(1) {
-    content: 
+msItem quote:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.quote");
 }
-msItem explicit:last-of-type:after(1) {
-    content: 
+msItem explicit:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.explicit");
 }
-msItem finalRubric:last-of-type:after(1) {
-    content: 
+msItem finalRubric:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.finalRubric");
 }
-msItem note:last-of-type:after(1) {
-    content: 
+msItem note:last-of-type:after(1) {content: 
     oxy_button(
 actionID, "append.sibling.note");
+}*/
+/*handNote:after(2) {content: oxy_button(
+actionID, "delete.self"
+);
+}
+handNote:last-of-type:after(1) {content: oxy_button(
+actionID, "append.sibling.self.shallow"
+);
+}*/
+origDate:after(1) {
+    content: "\A" oxy_button(
+actionID, "pick.attr.when"
+) oxy_button(
+actionID, "pick.attr.when-custom"
+) oxy_button(
+actionID, "pick.attr.notBefore"
+) oxy_button(
+actionID, "pick.attr.notBefore-custom"
+) oxy_button(
+actionID, "pick.attr.from"
+) oxy_button(
+actionID, "pick.attr.from-custom"
+) oxy_button(
+actionID, "pick.attr.notAfter"
+) oxy_button(
+actionID, "pick.attr.notAfter-custom"
+) oxy_button(
+actionID, "pick.attr.to"
+) oxy_button(
+actionID, "pick.attr.to-custom"
+)
+
+}
+origDate:not(origDate[datingMethod]):after(2){
+    content: oxy_button(
+actionID, "pick.attr.datingMethod"
+)
 }
 change[when]:before(8) {
     content: oxy_datePicker(
 edit, "@when", 
 format, "yyyy-MM-dd")
+
 }
 *[href] {
     content: 
@@ -291,68 +387,68 @@ edit, "@href",
 columns 25);
 }
 change[who]:before(7) {
-    background-color: lightyellow;
     content: 'who: ' oxy_textfield(
 edit, "@who", 
 columns, 15
 )
+
 }
 locus:before(8) {
-    background-color: lightyellow;
     content: 'from: ' oxy_textfield(
 edit, "@from", 
 columns, 15
 )
+
 }
 locus:before(7) {
-    background-color: lightyellow;
     content: ' to: ' oxy_textfield(
 edit, "@to", 
 columns, 15
 )
+
 }
 *[ref]:before(8) {
     content: 'ref: ' oxy_textfield(
 edit, "@ref", 
 columns, 15
 )
+
 }
 *[xml|lang]:before(7)
 {
-    background-color: lightyellow;
     content: 'language: ' oxy_combobox(
 edit, '@xml:lang', 
 editable, false, 
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop', 
 labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
+
 }
 *[mainLang]:before(7)
 {
-    background-color: lightyellow;
     content: 'language: ' oxy_combobox(
 edit, '@mainLang', 
 editable, false, 
 values, 'syr, syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, ar-Syrj, ar-Syrn, en, ar, fr, de, la, grc, cop', 
 labels, 'Unvocalized Syriac of any variety or period, Syriac in Estrangela, Vocalized West Syriac, Vocalized East Syriac, Melkite Syriac, Palestinian Syriac, Unvocalized or Undetermined Arabic Garshuni, Arabic Garshuni in Vocalized West Syriac Script, Arabic Garshuni in Vocalized East Syriac Script, English, Arabic, French, German, Latin, Ancient Greek, Coptic'
 )
+
 }
 objectDesc[form]:before(8) {
-    background-color: lightyellow;
     content: 'form: ' oxy_textfield(
 edit, "@form", 
 columns, 15
 )
+
 }
 supportDesc[material]:before(8) {
-    background-color: lightyellow;
     content: 'material: ' oxy_textfield(
 edit, "@material", 
 columns, 15
 )
+
 }
 handNote:before(8) {
-    background-color: lightyellow;
     content: 'scope: ' oxy_combobox(
 edit, '@scope', 
 editable, false, 
@@ -360,9 +456,9 @@ values, 'sole, major, minor',
 labels, 'sole, major, minor'
 )
 
+
 }
 handNote:before(7) {
-    background-color: lightyellow;
     content: 'script: ' oxy_combobox(
 edit, '@script', 
 editable, false, 
@@ -370,12 +466,85 @@ values, 'syr-Syre, syr-Syrj, syr-Syrn, syr-x-syrm, syr-x-syrp, ar-Syrc, mixed, u
 labels, 'Estrangela, Jacobite Syriac or Syriac with Greek vowels, Nestorian Syriac or Syriac with pointed vowels, Malkite or Melkite, Palestinian Syriac, Arabic translation in Syriac Characters, mixed, unknown'
 )
 
+
 }
 handNote:before(6) {
-    background-color: lightyellow;
     content: 'ref: ' oxy_textfield(
 edit, "@medium", 
 columns, 15
 )
 
+}
+origDate[when]:before(8) {
+    content: 'when: ' oxy_textfield(
+edit, "@when", 
+columns, 15
+)
+
+}
+origDate[when-custom]:before(8) {
+    content: 'when (custom): ' oxy_textfield(
+edit, "@when-custom", 
+columns, 15
+)
+
+}
+origDate[from]:before(8) {
+    content: 'from: ' oxy_textfield(
+edit, "@from", 
+columns, 15
+)
+
+}
+origDate[from-custom]:before(8) {
+    content: 'from (custom): ' oxy_textfield(
+edit, "@from-custom", 
+columns, 15
+)
+
+}
+origDate[notBefore]:before(8) {
+    content: 'not before: ' oxy_textfield(
+edit, "@notBefore", 
+columns, 15
+)
+
+}
+origDate[notBefore-custom]:before(8) {
+    content: 'not before (custom): ' oxy_textfield(
+edit, "@notBefore-custom", 
+columns, 15
+)
+}
+origDate[to]:before(7) {
+    content: 'to: ' oxy_textfield(
+edit, "@to", 
+columns, 15
+)
+
+}
+origDate[to-custom]:before(7) {
+    content: 'to (custom): ' oxy_textfield(
+edit, "@to-custom", 
+columns, 15
+)
+
+}
+origDate[notAfter]:before(7) {
+    content: 'not after: ' oxy_textfield(
+edit, "@notAfter", 
+columns, 15
+)
+
+}
+origDate[notAfter-custom]:before(7) {
+    content: 'not after (custom): ' oxy_textfield(
+edit, "@notAfter-custom", 
+columns, 15
+)
+}
+origDate[datingMethod]:before(6) {
+    content: 'dating method: ' oxy_textfield(
+edit, "@datingMethod", 
+columns, 15)
 }

@@ -17,7 +17,7 @@
           <msIdentifier>
             <idno type="URI">$FIXME$</idno>
             <altIdentifier>
-              <idno type="BL-Shelfmark">$FIXME$ [example, Add MS $$$, ff]</idno>
+              <idno type="BL-Shelfmark">$FIXME$</idno>
             </altIdentifier>
           </msIdentifier>
           <msContents>
@@ -49,20 +49,15 @@
               <handNote xml:id="handNote1" scope="$MENU$" script="$MENU$"
                 medium="$FIXME$[usually &apos;unknown&apos;">
                 <desc>$FIXME$</desc>
-                <!-- button to add handNote elements -->
-                <!-- JK: pending -->
               </handNote>
             </handDesc>
             <additions>
-              <p>$Box$[Usually empty]</p>
+              <p>$FIXME$[Usually empty]</p>
               <list>
                 <item>
                   <locus from="$FIXME$" to="$FIXME$[usually empty]"/>
-                  <p>$FIXME$</p>
-                  <p><quote xml:lang="syr">$FIXME$</quote></p>
+                  <p>$FIXME$<quote xml:lang="syr">$FIXME$</quote></p>
                 </item>
-                <!-- button to add item elements -->
-                <!-- JK: pending -->
               </list>
             </additions>
             <bindingDesc>
@@ -75,16 +70,8 @@
           </physDesc>
           <history>
             <origin>
-              <!-- JK: I haven't yet supported the next element, pending discussion -->
-              <origDate notBefore="$FIXME$" notAfter="$FIXME$" from="$FIXME$" to="$FIXME$" when="$FIXME$"
-                >$FIXME$</origDate>
-              <!-- These attributes are mutually exclusive, how should we handle this? @when is mutually exclusive with @notBefore and @notAfter -->
-              <!-- JK: this needs to be handled at the schema level; doesn't have to be RELAX-NG, it could be Schematron -->
-              <!-- Button to add origDate and to add a custom origDate based on below -->
-              <!-- JK: to be discussed; I recommend a Schematron quick fix -->
-              <origDate notBefore-custom="$FIXME$" notAfter-custom="$FIXME$" from-custom="$FIXME$"
-                to-custom="$FIXME$" when-custom="$FIXME$" datingMethod="$MENU$">$FIXME$</origDate>
-              <origPlace ref="$FIXME$" xml:lang="$MENU$">$FIXME$</origPlace>
+              <origDate notBefore="$FIXME$" notAfter="$FIXME$">$FIXME$</origDate>
+              <origPlace ref="$FIXME$" xml:lang="syr">$FIXME$</origPlace>
             </origin>
             <provenance/>
             <acquisition/>
@@ -99,7 +86,6 @@
     <profileDesc/>
     <revisionDesc status="draft">
       <change when="$ISODATEFIXME$" who="$MENU$">Initial TEI encoding.</change>
-      <!-- JK: I'll add an add change button -->
     </revisionDesc>
   </teiHeader>
   <facsimile>

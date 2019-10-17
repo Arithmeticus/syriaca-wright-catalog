@@ -104,7 +104,7 @@
                                                                 <String>append.child.locus</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert locus</String>
+                                                                <String>+ locus</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;locus> to the current element</String>
@@ -252,7 +252,7 @@
                                                                 <String>append.child.author</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert author</String>
+                                                                <String>+ author</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;author> to the current element</String>
@@ -400,7 +400,7 @@
                                                                 <String>append.child.title</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert title</String>
+                                                                <String>+ title</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;title> to the current element</String>
@@ -548,7 +548,7 @@
                                                                 <String>append.child.rubric</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert rubric</String>
+                                                                <String>+ rubric</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;rubric> to the current element</String>
@@ -696,7 +696,7 @@
                                                                 <String>append.child.incipit</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert incipit</String>
+                                                                <String>+ incipit</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;incipit> to the current element</String>
@@ -844,7 +844,7 @@
                                                                 <String>append.child.quote</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert quote</String>
+                                                                <String>+ quote</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;quote> to the current element</String>
@@ -992,7 +992,7 @@
                                                                 <String>append.child.explicit</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert explicit</String>
+                                                                <String>+ explicit</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;explicit> to the current element</String>
@@ -1140,7 +1140,7 @@
                                                                 <String>append.child.finalRubric</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert finalRubric</String>
+                                                                <String>+ finalRubric</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;finalRubric> to the current element</String>
@@ -1288,7 +1288,7 @@
                                                                 <String>append.child.note</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert note</String>
+                                                                <String>+ note</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;note> to the current element</String>
@@ -1436,7 +1436,7 @@
                                                                 <String>append.child.msItem</String>
                                                             </field>
                                                             <field name="name">
-                                                                <String>Insert msItem</String>
+                                                                <String>+ msItem</String>
                                                             </field>
                                                             <field name="description">
                                                                 <String>append a child &lt;msItem> to the current element</String>
@@ -1555,6 +1555,1062 @@
                                                                         </field>
                                                                         <field name="operationID">
                                                                             <String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>56</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.sibling.self.shallow</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>+ ↓</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add a shallow copy of the current element as its next following sibling.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>action</String>
+                                                                                    <String>After</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
+    &lt;xsl:template match="*">
+        &lt;xsl:copy>
+            &lt;xsl:apply-templates select="@*"/>
+            &lt;xsl:text>${caret}&lt;/xsl:text>
+            &lt;xsl:if test="exists(text()[matches(., '\S')])">
+                &lt;xsl:text>$FIXME$&lt;/xsl:text>
+            &lt;/xsl:if>
+        &lt;/xsl:copy>
+    &lt;/xsl:template>
+    &lt;xsl:template match="@*">
+        &lt;xsl:copy/>
+    &lt;/xsl:template>
+&lt;/xsl:transform></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>57</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>append.child.self.shallow</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>+ →</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Add a shallow copy of the current element as its last child.</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>action</String>
+                                                                                    <String>Inside as last child</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
+    &lt;xsl:template match="*">
+        &lt;xsl:copy>
+            &lt;xsl:apply-templates select="@*"/>
+            &lt;xsl:text>${caret}&lt;/xsl:text>
+            &lt;xsl:if test="exists(text()[matches(., '\S')])">
+                &lt;xsl:text>$FIXME$&lt;/xsl:text>
+            &lt;/xsl:if>
+        &lt;/xsl:copy>
+    &lt;/xsl:template>
+    &lt;xsl:template match="@*">
+        &lt;xsl:copy/>
+    &lt;/xsl:template>
+&lt;/xsl:transform></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String></String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>58</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>delete.self</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>␡</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Delete the current element</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String></String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>fragment</String>
+                                                                                    <String>${caret}</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertLocation</String>
+                                                                                    <String>self::*</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>insertPosition</String>
+                                                                                    <String>Replace</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.InsertOrReplaceFragmentOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>59</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.when</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @when</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @when, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=when</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>60</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.when-custom</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @when-custom</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @when-custom, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=when-custom</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>61</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.notBefore</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @notBefore</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @notBefore, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=notBefore</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>62</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.notBefore-custom</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @notBefore-custom</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @notBefore-custom, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=notBefore-custom</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>63</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.from</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @from</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @from, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=from</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>64</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.from-custom</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @from-custom</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @from-custom, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=from-custom</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>65</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.notAfter</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @notAfter</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @notAfter, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=notAfter</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>66</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.notAfter-custom</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @notAfter-custom</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @notAfter-custom, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=notAfter-custom</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>67</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.to</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @to</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @to, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=to</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>68</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.to-custom</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>Use @to-custom</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Pick @to-custom, eliminating rival attributes</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>externalParams</String>
+                                                                                    <String>name-of-attr-desired=to-custom</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>script</String>
+                                                                                    <String>${pd}/functions/changeOrigDate.xsl</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>sourceLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>targetLocation</String>
+                                                                                    <String>self::*:origDate</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+                                                                        </field>
+                                                                    </actionMode>
+                                                                </actionMode-array>
+                                                            </field>
+                                                            <field name="enabledInReadOnlyContext">
+                                                                <Boolean>false</Boolean>
+                                                            </field>
+                                                        </action>
+                                                    </field>
+                                                    <field name="patchHandling">
+                                                        <String>addIndex</String>
+                                                    </field>
+                                                    <field name="anchor">
+                                                        <null/>
+                                                    </field>
+                                                </poPatch>
+                                                <poPatch>
+                                                    <field name="fieldPath">
+                                                        <String>authorExtensionDescriptor/actionDescriptors</String>
+                                                    </field>
+                                                    <field name="index">
+                                                        <Integer>69</Integer>
+                                                    </field>
+                                                    <field name="value">
+                                                        <action>
+                                                            <field name="id">
+                                                                <String>pick.attr.datingMethod</String>
+                                                            </field>
+                                                            <field name="name">
+                                                                <String>+ @datingMethod</String>
+                                                            </field>
+                                                            <field name="description">
+                                                                <String>Insert @datingMethod</String>
+                                                            </field>
+                                                            <field name="largeIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="smallIconPath">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accessKey">
+                                                                <String></String>
+                                                            </field>
+                                                            <field name="accelerator">
+                                                                <null/>
+                                                            </field>
+                                                            <field name="actionModes">
+                                                                <actionMode-array>
+                                                                    <actionMode>
+                                                                        <field name="xpathCondition">
+                                                                            <String>self::*:origDate</String>
+                                                                        </field>
+                                                                        <field name="argValues">
+                                                                            <serializableOrderedMap>
+                                                                                <entry>
+                                                                                    <String>elementLocation</String>
+                                                                                    <String>self::*</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>name</String>
+                                                                                    <String>datingMethod</String>
+                                                                                </entry>
+                                                                                <entry>
+                                                                                    <String>value</String>
+                                                                                    <String>$FIXME$</String>
+                                                                                </entry>
+                                                                            </serializableOrderedMap>
+                                                                        </field>
+                                                                        <field name="operationID">
+                                                                            <String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
                                                                         </field>
                                                                     </actionMode>
                                                                 </actionMode-array>
